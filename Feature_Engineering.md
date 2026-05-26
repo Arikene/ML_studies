@@ -16,7 +16,7 @@ Replace with the middle value of the column.
 df['salary'].fillna(df['salary'].median(), inplace=True)
 
 ### 3. Mode Imputation
-Replace with the most frequent value.
+Replace with the **most frequent** value.
 Rarely used for numerical data, but works for discrete numbers (e.g., number of children)
 
 df['num_children'].fillna(df['num_children'].mode()[0], inplace=True)
